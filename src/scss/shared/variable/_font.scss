@@ -1,0 +1,24 @@
+// Font size 
+$font-size-base: 14px !default;
+$font-size-xxxl: 36px !default;
+$font-size-xxl: 32px !default;
+$font-size-xl: 26px !default;
+$font-size-lgg: 18px !default;
+$font-size-lg: 16px !default;
+$font-size-md: 15px !default;
+$font-size-sm: 13px !default;
+$font-size-xs: 12px !default;
+$font-size-xxs: 11px !default;
+$body-font-size: $font-size-base !default;
+
+// Line height
+$line-height-base: 1.6 !default;
+$line-height-zero: 1 !default;
+$body-line-height: $line-height-base !default;
+
+// Font weight
+$font-weight-normal: 400 !default;
+$font-weight-light-bold: 500 !default;
+$font-weight-bold: 600 !default;
+$font-weight-dark-bold: 700 !default;
+$body-font-weight: $font-weight-normal !default;

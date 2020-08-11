@@ -1,0 +1,13 @@
+@mixin flexCenter($direction: row, $justify-content: space-between, $align-items: center) {
+  display: flex;
+  justify-content: $justify-content;
+  flex-direction: $direction;
+  align-items: $align-items;
+}
+
+@mixin locationCenter($horizontal: 50%, $vertical: 50%) {
+  position: absolute;
+  top: $vertical;
+  left: $horizontal;
+  transform: translate(-$horizontal, -$vertical);
+}

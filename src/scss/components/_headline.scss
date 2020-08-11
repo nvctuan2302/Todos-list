@@ -1,0 +1,22 @@
+.headline {
+  display: block;
+  width: 100%;
+  text-align: center;
+  line-height: 1;
+  
+  &--main {
+    font-size: 70px;
+    color: $color-primary;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+    font-weight: $font-weight-dark-bold;
+  }
+  
+  &--sub {
+    color: $color-mid-gray;
+    text-shadow: 0 10px 0 rgba(255, 255, 255, 0.5);
+    font-size: $font-size-xxs;
+    margin-bottom: 30px;
+  }
+
+}
