@@ -1,5 +1,13 @@
+class todos {
+  constructor() {
+    this.
+    this.countTodos = document.querySelector('.js-count-todos')
+  }
+}
+
 window.addEventListener('DOMContentLoaded', () => {
 
+  
   const todoNew = document.querySelector('.js-todo-new')
   const countTodos = document.querySelector('.js-count-todos')//
   const clearTodos = document.querySelector('.js-clear-todos')
@@ -94,8 +102,8 @@ window.addEventListener('DOMContentLoaded', () => {
   delegate(document, 'change', '.js-checkbox', e => {
     let elementWrapper = e.target.closest('.todo-list__item')
 
-    editValue(arrItem, elementWrapper, e.target.checked)
-    if (active.checked || completed.checked) elementWrapper.remove()
+    editValue(arrItem, elementWrapper, e.target.checked);
+    (active.checked || completed.checked) && elementWrapper.remove()
     countActive()
   })
 
@@ -146,6 +154,7 @@ const updateStorage = arr => localStorage.setItem('todoList', JSON.stringify(arr
 const valueMax = arr => Math.max.apply(Math, arr.map(item => item.id)) + 1
 
 const isVisible = elem => !!elem && !!(elem.offsetWidth || elem.offsetHeight || elem.getClientRects().length)
+
 
 const hideOnClickOutside = (element, fn) => {
   const outsideClickListener = event => {

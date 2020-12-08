@@ -9,11 +9,12 @@
 .todo {
   .todo-header {
     position: relative;
+
     &__new {
       @extend %style;
       position: relative;
       padding: 11px 35px 11px 75px;
-  
+
       &::placeholder {
         color: $color-light-gray;
         font-style: italic;
